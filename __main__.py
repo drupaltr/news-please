@@ -18,9 +18,9 @@ cur_path = os.path.dirname(os.path.realpath(__file__))
 par_path = os.path.dirname(cur_path)
 sys.path.append(cur_path)
 sys.path.append(par_path)
-from newsplease.helper_classes.savepath_parser import SavepathParser
-from newsplease.config import JsonConfig
-from newsplease.config import CrawlerConfig
+from helper_classes import SavepathParser
+from config import JsonConfig
+from config import CrawlerConfig
 
 try:
     import builtins
@@ -131,7 +131,7 @@ class NewsPleaseLauncher(object):
         self.crawler_list = self.CrawlerList()
         self.daemon_list = self.DaemonList()
 
-        self.__single_crawler = self.get_abs_file_path("./single_crawler.py", True, False)
+        self.__single_crawler = self.get_abs_file_path("single_crawler.py", True, False)
 
         self.manage_crawlers()
 

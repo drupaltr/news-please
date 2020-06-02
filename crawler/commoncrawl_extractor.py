@@ -17,7 +17,7 @@ from scrapy.utils.log import configure_logging
 from six.moves import urllib
 from warcio.archiveiterator import ArchiveIterator
 
-from .. import NewsPlease
+from newsplease import NewsPlease
 
 __author__ = "Felix Hamborg"
 __copyright__ = "Copyright 2017"

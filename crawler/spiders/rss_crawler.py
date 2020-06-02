@@ -1,4 +1,4 @@
-from newsplease.helper_classes.url_extractor import UrlExtractor
+from helper_classes.url_extractor import UrlExtractor
 
 try:
     import urllib2

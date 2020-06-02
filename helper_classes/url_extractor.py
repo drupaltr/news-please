@@ -3,7 +3,7 @@ Helper class for url extraction.
 """
 import os
 import re
-from newsplease.config import CrawlerConfig
+from config import CrawlerConfig
 
 try:
     from urlparse import urlparse
